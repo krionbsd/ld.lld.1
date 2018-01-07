@@ -1,0 +1,42 @@
+.Dd January 7, 2017
+.Dt LD.LLD 1
+.Sh Name
+.Nm ld.lld
+.Nd linker from the LLVM project
+.Sh SYNOPSIS
+.Nm
+.Op Fl [options]
+.Ar objfile
+.Sh DESCRIPTION
+.Nm
+is a drop-in replacement for the GNU linkers.  That accepts the same
+command line arguments and linker scripts as GNU.
+.Pp
+The following options are available:
+.Bl -tag -width indent
+.It Fl -allow-multiple-definition
+Allow multiple definitions.
+.It Fl -as-needed
+Only set DT_NEEDED for shared libraries if used.
+.It Fl -auxiliary Ar value
+Set DT_AUXILIARY field to the specified name.
+.It Fl -Bdynamic
+Link against shared libraries
+.It Fl -Bstatic
+Do not link against shared libraries
+.It Fl -Bsymbolic-functions
+Bind defined function symbols locally
+.It Fl -Bsymbolic
+Bind defined symbols locally
+.It Fl -build-id = Ar value
+Generate build ID note
+.It Fl -build-id
+Generate build ID note
+.It Fl -color-diagnostics = Ar value
+Use colors in diagnostics
+.It Fl -color-diagnostics
+Use colors in diagnostics
+.It Fl -compress-debug-sections = Ar value
+Compress DWARF debug sections
+
+

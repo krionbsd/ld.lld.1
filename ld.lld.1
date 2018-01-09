@@ -9,6 +9,12 @@
 .Op Ar options
 .Ar objfile ...
 .Sh DESCRIPTION
+A linker takes one or more object, archive and library files, and combines
+them into an output file (an executable, a shared library, or another object
+file).
+It relocates code and data from the input files and resolves symbol
+references between them.
+.Pp
 .Nm
 is a drop-in replacement for the GNU linkers.
 It accepts most of the same command line arguments and linker scripts

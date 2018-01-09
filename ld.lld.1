@@ -61,7 +61,9 @@ Delete temporary local symbols.
 .It Fl -discard-none
 Keep all symbols in the symbol table.
 .It Fl -dynamic-linker Ar value
-Which dynamic linker to use.
+Specify the dynamic linker to be used for a dynamically linked executable.
+This is recorded in an ELF segment of type
+.Dv PT_INTERP .
 .It Fl -dynamic-list Ar value
 Read a list of dynamic symbols.
 .It Fl -eh-frame-hdr
